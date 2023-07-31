@@ -1,0 +1,70 @@
+---
+layout: default
+title: ""
+---
+
+<div id="homepage">
+	<i class="fas fa-info-circle"></i>
+	<div class="homepagetext">
+		<h2>About this Website</h2>
+		<span>{% include about.html %}</span>
+	</div>
+</div>
+<br>
+
+<h1>Cyber Harassment Topics</h1>
+
+<div class="post main" style="border-radius: 4px 4px 0px 0px;">
+	<i class="fas fa-burn"></i>
+	<div class="header">
+		<a href="{{ site.url }}/logout/about">
+			<h2 style="margin-left: 52px;">About Cyber Harassment</h2>
+		</a>
+	</div>
+	<span class="excerpt home">Learn about the different types of cyber harassment and terminology, who perpetrates it, and the ramifications of it.</span>    
+	<span class="excerpt numbers">9+<br>Answers</span>
+</div>
+<div class="post main">
+	<i class="fas fa-ban"></i>
+	<div class="header">	
+		<a href="{{ site.url }}/logout/prevention">
+			<h2 style="margin-left: 52px;">How to Prevent Cyber Harassment</h2>           
+		</a>
+	</div>
+	<span class="excerpt home">Learn what to do to prevent cyber harassment from happening to you or someone you know or reduce the harm done by it.</span>    
+	<span class="excerpt numbers">7+<br>Methods</span>
+</div>
+<div class="post main">
+	<i class="fas fa-fire-extinguisher"></i>
+	<div class="header">
+		<a href="{{ site.url }}/logout/fighting">
+			<h2 style="margin-left: 52px;">Fighting Cyber Harassment</h2>           
+		</a>
+	</div>
+	<span class="excerpt home">Learn what to do if you are or someone you know becomes a victim of cyber harassment.</span>    
+	<span class="excerpt numbers">6+<br>Solutions</span>
+</div>
+<div class="post main">
+	<i class="fas fa-heart-broken"></i>
+	<div class="header">
+		<a href="{{ site.url }}/logout/victims">
+			<h2 style="margin-left: 52px;">Victims of Cyber Harassment</h2>           
+		</a>
+	</div>
+	<span class="excerpt home">Read and watch the stories of victims of the many different types of cyber harassment.</span>
+	<span class="excerpt numbers">{% assign counter = 0 %}
+		{% for post in site.posts %}		
+		{% assign counter = counter | plus: 1 %}
+		{% endfor %}
+		{{ counter }}+<br>Stories</span>
+	</div>
+	<div class="post main" style="border-radius: 0px 0px 4px 4px;">
+		<i class="far fa-life-ring"></i>
+		<div class="header">
+			<a href="{{ site.url }}/logout/resources">
+				<h2 style="margin-left: 52px;">Helpful Resources, References, and Credits</h2>      
+			</a>
+		</div>
+		<span class="excerpt home">See helpful resources including more information about cyber harassment and immediate help. Also find all sources used in the creation of this website.</span>
+		<span class="excerpt numbers">15+<br>Organizations</span>
+	</div>
